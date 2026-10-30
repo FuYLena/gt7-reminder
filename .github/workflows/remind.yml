@@ -7,11 +7,6 @@ on:
   push:
     paths: ["campaigns.json"]   # run right away when new dates are added
   workflow_dispatch:
-    inputs:
-      test:
-        description: "只發一則測試訊息"
-        type: boolean
-        default: false
 
 permissions:
   contents: write
@@ -34,7 +29,6 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          TEST_MESSAGE: ${{ inputs.test }}
         run: python remind.py
 
       - name: Save state
