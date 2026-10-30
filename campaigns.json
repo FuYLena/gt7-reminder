@@ -1,0 +1,18 @@
+{
+  "_format": "entry_start / entry_end / claim_deadline = ISO UTC (e.g. 2026-10-19T08:59:00Z). distribution_date = Perth date (YYYY-MM-DD) or null if not yet known. claim_deadline = null if not officially published (then distribution_date + 14 days is used).",
+  "campaigns": [
+    {
+      "id": "gtws-2026-r3-singapore",
+      "name": "GT World Series 2026 Rd.3 新加坡",
+      "rewards": [
+        "Ford GT Race Car '18 (Stealth Model)",
+        "SF23 Super Formula / Toyota '23 (Stealth Model)"
+      ],
+      "entry_start": "2026-10-03T09:00:00Z",
+      "entry_end": "2026-10-19T08:59:00Z",
+      "distribution_date": "2026-10-20",
+      "claim_deadline": null,
+      "source_url": "https://www.gran-turismo.com/au/news/00_4481753.html"
+    }
+  ]
+}
