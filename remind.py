@@ -243,6 +243,11 @@ def main():
         state.setdefault(key, [])
     state.setdefault("tg_offset", 0)
 
+    if os.environ.get("TEST_MESSAGE") == "true":
+        send("✅ <b>GT7 提醒測試成功</b>\n之後的觀賽領車提醒都會發到這裡。")
+        print("Test message sent.")
+        return
+
     now = now_perth()
     print(f"Run at {now:%Y-%m-%d %H:%M} Perth, {len(campaigns)} campaign(s)")
 
